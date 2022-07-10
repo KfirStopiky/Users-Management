@@ -1,0 +1,108 @@
+.main_container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.left_side {
+    margin: 20px;
+    width: 28%;
+    &__open{
+        padding-right: 100px;
+        border-right: 2px solid black;
+        height: 100%;
+        margin: 20px;
+        width: 40%;
+    }
+}
+.add_user_btn{
+    display: flex;
+    justify-content: center;
+    margin:10px 0 -5px 0;
+}
+.todos_and_posts_container{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.posts,
+.todos{
+    height: 100rem;
+    width: 100%;
+    overflow-y: scroll;
+    margin: 20px 0;
+    padding: 5rem 3rem 0 3rem;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.add_user{
+    margin-left: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.add_todo_component{
+    background-color: antiquewhite;
+}
+.search{
+    font-size: 1.4rem;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__input{
+        text-align: center;
+        margin-bottom: 1rem;    
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: var(--color-grey-light-2);
+        border: none;
+        padding: .7rem .2rem;
+        border-radius: 100px;
+        width: 80%;
+        transition: all .6s;
+        margin-right: -3.5rem;
+
+        &:focus{
+            outline: none;
+            width: 100%;
+            background-color: var(--color-grey-light-3);
+        }
+
+        &::-webkit-input-placeholder{
+            font-weight: 100;
+            color: ver(--color-grey-light-4);
+        }
+    }
+
+    &__input:focus + &__button{
+        background-color: var(--color-grey-light-3);
+    }
+
+    &__button{
+        border: none;
+        margin-top: -8px;
+        background-color: var(--color-grey-light-2);
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    &__icon{
+        width: 2rem;
+        height: 2rem;
+        fill: ver(--color-grey-dark-3);
+    }
+}
+

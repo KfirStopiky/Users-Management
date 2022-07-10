@@ -1,0 +1,17 @@
+@import '../../Scss/mixins';
+
+.add_user_container{
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    @include flexCenter(column)
+}
+.add_user_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
